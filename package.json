@@ -4,7 +4,7 @@
   "description": "backend project and mern fullstack prject",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -14,6 +14,14 @@
   "author": "MOHAMMAD ARSALAN",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotnet": "^1.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
   }
 }
